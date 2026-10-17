@@ -15,9 +15,9 @@ Download the latest version directly from the [**Releases Page**](https://github
 
 | Platform | Download File | Requirements | Description |
 | :--- | :--- | :--- | :--- |
-| 📱 **Android** | [`TuneDAC-Release.apk`](https://github.com/khaidox/TuneDAC/releases/latest) | Android 8.0+ (USB-OTG) | Standalone APK, no Google Play Services or Root required. |
-| 🐧 **Linux** | [`TuneDAC-Linux-x64.tar.gz`](https://github.com/khaidox/TuneDAC/releases/latest) | 64-bit Linux (GTK 3, ALSA/PipeWire) | Extract and run `./tunedac`. |
-| 💻 **Windows** | `TuneDAC-Windows.zip` *(TODO)* | — | Standalone executable (`TuneDAC.exe`) — Planned for upcoming build. |
+| 💻 **Windows** | [`TuneDAC-Standalone.exe`](https://github.com/khaidox/TuneDAC/releases/latest) | Windows 10 / 11 (64-bit) | **Single standalone `.exe`** — No install needed, just double-click! |
+| 📱 **Android** | [`TuneDAC-Release.apk`](https://github.com/khaidox/TuneDAC/releases/latest) | Android 8.0+ (USB Type-C) | Standalone APK, no Google Play Services or Root required. |
+| 🐧 **Linux** | [`TuneDAC-Linux-x64.tar.gz`](https://github.com/khaidox/TuneDAC/releases/latest) | 64-bit Linux (GTK 3, ALSA/PipeWire) | Extract and run `./TuneDAC-Linux-x64`. |
 
 ---
 
@@ -33,7 +33,8 @@ Download the latest version directly from the [**Releases Page**](https://github
 - **Instant A/B Comparison**: 1-Tap toggling between **Slot A** (Active Tuning) and **Slot B** (Reference Flat 0dB) while listening to effortlessly evaluate sonic differences in real time.
 - **Real-Time Frequency Response Curve**: Interactive logarithmic graph (20Hz–20kHz) showing both active response and comparative dashed curves.
 - **Multi-Layer Soft Micro-Mute**: Eliminates 100% of loud "pop" or "click" sound artifacts during IIR biquad filter parameter updates.
-- **L/R Channel Balance**: Smooth stereo balance adjustment (-12dB to +12dB) with zero audio degradation.
+- **L/R Channel Balance**: Smooth stereo balance adjustment (-12dB to +12dB) across Android and Windows (powered by Windows Core Audio COM endpoints).
+- **Smart Connection Feedback**: Real-time notifications and diagnostics when connecting to USB DACs.
 
 ---
 
@@ -41,8 +42,17 @@ Download the latest version directly from the [**Releases Page**](https://github
 
 TuneDAC supports USB DAC dongles equipped with the **KT Micro KT02H20** DSP chipset:
 
-- **FiiO JadeAudio JA11** (VID: `0x2972`)
+- **FiiO JadeAudio JA11**
 - Other compatible KT02H20-based USB Type-C Audio adapters
+
+---
+
+## 💻 Windows Quick Start
+
+1. Download **`TuneDAC-Standalone.exe`**.
+2. Plug in your USB DAC dongle.
+3. Double-click `TuneDAC-Standalone.exe` to run immediately!  
+   *(Portable single-file binary — zero installation, setup, or external DLLs required).*
 
 ---
 
@@ -58,8 +68,7 @@ TuneDAC supports USB DAC dongles equipped with the **KT Micro KT02H20** DSP chip
 
 ```bash
 tar -xzf TuneDAC-Linux-x64.tar.gz
-cd TuneDAC
-./tunedac
+./TuneDAC-Linux-x64
 ```
 
 ---
