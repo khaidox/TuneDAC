@@ -51,8 +51,7 @@ TuneDAC supports USB DAC dongles equipped with the **KT Micro KT02H20** DSP chip
 
 1. Download **`TuneDAC-Standalone.exe`**.
 2. Plug in your USB DAC dongle.
-3. Double-click `TuneDAC-Standalone.exe` to run immediately!  
-   *(Portable single-file binary — zero installation, setup, or external DLLs required).*
+3. Double-click `TuneDAC-Standalone.exe` to run immediately!
 
 ---
 
